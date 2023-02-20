@@ -9,7 +9,7 @@ import { Gujarat } from './Components/Categories/Gujarat';
 import { Ahmedabad } from './Components/Categories/Ahmedabad';
 import { Business } from './Components/Categories/Business';
 import { Technology } from './Components/Categories/Technology';
-import { Others } from './Components/Categories/Others';
+import { Beauty, Others } from './Components/Categories/Beauty';
 import { Home2 } from './Components/Categories/Home2';
 import { Home3 } from './Components/Categories/Home3';
 import { Corona2 } from './Components/Categories/Corona2';
@@ -24,6 +24,8 @@ import { Business2 } from './Components/Categories/Business2';
 import { Business3 } from './Components/Categories/Business3';
 import { Technology2 } from './Components/Categories/Technology2';
 import { Technology3 } from './Components/Categories/Technology3';
+import { Food } from './Components/Categories/Food';
+import { Entertainment } from './Components/Categories/Entertainment';
 
 function App() {
   return (
@@ -51,14 +53,9 @@ function App() {
         <Route path='/tech' element={<Technology/>}/>
         <Route path='/tech2' element={<Technology2/>}/>
         <Route path='/tech3' element={<Technology3/>}/>
-        <Route path='/others' element={<Others/>}/>
-        {/* <Route path='/corona' element={<Category id={"https://timenews.co.in/wp-json/wp/v2/posts?categories=833"}/>}/>
-        <Route path='/world' element={<Category id={"https://timenews.co.in/wp-json/wp/v2/posts?categories=24"}/>}/>
-        <Route path='/guj' element={<Category id={"https://timenews.co.in/wp-json/wp/v2/posts?categories=11"}/>}/>
-        <Route path='/ahm' element={<Category id={"https://timenews.co.in/wp-json/wp/v2/posts?categories=3"}/>}/>
-        <Route path='/bus' element={<Category id={"https://timenews.co.in/wp-json/wp/v2/posts?categories=7"}/>}/>
-        <Route path='/tech' element={<Category id={"https://timenews.co.in/wp-json/wp/v2/posts?categories=8"}/>}/>
-        <Route path='/others' element={<Category id={"https://timenews.co.in/wp-json/wp/v2/posts?categories=6"}/>}/> */}
+        <Route path='/beauty' element={<Beauty/>}/>
+        <Route path='/food' element={<Food/>}/>
+        <Route path='/enter' element={<Entertainment/>}/>
       </Routes>
     </div>
   );

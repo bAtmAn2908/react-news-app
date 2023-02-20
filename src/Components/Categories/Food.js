@@ -1,21 +1,21 @@
 import React , { useEffect, useState }from 'react'
 import axios from 'axios'
 
-export const Others = () => {
+export const Food = () => {
   useEffect(() => {   
     getAllNews();  
   }, []) 
   const [news, setnews] = useState([])
   const getAllNews = async()=>{
    
-    await axios.get("https://timenews.co.in/wp-json/wp/v2/posts?categories=14").then(res=>{    
+    await axios.get("https://timenews.co.in/wp-json/wp/v2/posts?categories=15").then(res=>{    
       setnews(res.data)
         console.log(res.data[1].yoast_head_json.og_image[0].url)
     })
   } 
   return (
-    <div>
-      <div className='mx-auto mt-5' style={{height:300, width:700}}>        
+    <div className='col-sm-12 col-md-12 col-lg-12'>
+      <div className='card mx-auto' style={{width:700}}>        
        {
         news.map((items) => (  
           <div class="card" >

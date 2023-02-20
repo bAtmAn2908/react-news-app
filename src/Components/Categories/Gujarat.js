@@ -1,5 +1,6 @@
 import React , { useEffect, useState }from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 export const Gujarat = () => {
   useEffect(() => {   
@@ -15,7 +16,7 @@ export const Gujarat = () => {
   } 
   return (
     <div>
-      <div className='mx-auto' style={{height:300, width:700}}>        
+      <div className='mx-auto' style={{width:700}}>        
        {
         news.map((items) => (  
           <div class="card" >
@@ -28,7 +29,23 @@ export const Gujarat = () => {
          
         ))
        }      
-        </div> 
+        </div> <br></br>
+        <div aria-label="Page navigation example  ">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <Link class="page-link"to="" tabindex="-1" aria-disabled="true">Previous</Link>
+    </li>
+    <li class="page-item disabled">
+      <Link class="page-link"to="" tabindex="-1" aria-disabled="true">1</Link>
+    </li>
+   
+    <li class="page-item"><Link class="page-link"to="/gujarat2">2</Link></li>
+    <li class="page-item"><Link class="page-link"to="/gujarat3">3</Link></li>
+    <li class="page-item">
+      <Link class="page-link"to="/gujarat2">Next</Link>
+    </li>
+  </ul>
+</div> 
 
     </div>
   )

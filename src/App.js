@@ -16,6 +16,14 @@ import { Corona2 } from './Components/Categories/Corona2';
 import { Corona3 } from './Components/Categories/Corona3';
 import { World2 } from './Components/Categories/World2';
 import { World3 } from './Components/Categories/World3';
+import { Gujarat2 } from './Components/Categories/Gujarat2';
+import { Gujarat3 } from './Components/Categories/Gujarat3';
+import { Ahmedabad2 } from './Components/Categories/Ahmedabad2';
+import { Ahmedabad3 } from './Components/Categories/Ahmedabad3';
+import { Business2 } from './Components/Categories/Business2';
+import { Business3 } from './Components/Categories/Business3';
+import { Technology2 } from './Components/Categories/Technology2';
+import { Technology3 } from './Components/Categories/Technology3';
 
 function App() {
   return (
@@ -31,10 +39,18 @@ function App() {
         <Route path='/world' element={<World/>}/>
         <Route path='/world2' element={<World2/>}/>
         <Route path='/world3' element={<World3/>}/>
-        <Route path='/guj' element={<Gujarat/>}/>
+        <Route path='/gujarat' element={<Gujarat/>}/>
+        <Route path='/gujarat2' element={<Gujarat2/>}/>
+        <Route path='/gujarat3' element={<Gujarat3/>}/>
         <Route path='/ahm' element={<Ahmedabad/>}/>
+        <Route path='/ahm2' element={<Ahmedabad2/>}/>
+        <Route path='/ahm3' element={<Ahmedabad3/>}/>
         <Route path='/bus' element={<Business/>}/>
+        <Route path='/bus2' element={<Business2/>}/>
+        <Route path='/bus3' element={<Business3/>}/>
         <Route path='/tech' element={<Technology/>}/>
+        <Route path='/tech2' element={<Technology2/>}/>
+        <Route path='/tech3' element={<Technology3/>}/>
         <Route path='/others' element={<Others/>}/>
         {/* <Route path='/corona' element={<Category id={"https://timenews.co.in/wp-json/wp/v2/posts?categories=833"}/>}/>
         <Route path='/world' element={<Category id={"https://timenews.co.in/wp-json/wp/v2/posts?categories=24"}/>}/>

@@ -31,7 +31,7 @@ export const Navbar = () => {
           <Link class="nav-link active" aria-current="page" to='/world'>WORLD</Link>
         </li>
         <li class="nav-item px-2 fs-6">
-          <Link class="nav-link active" aria-current="page" to='/guj'>GUJARAT</Link>
+          <Link class="nav-link active" aria-current="page" to='/gujarat'>GUJARAT</Link>
         </li>
         <li class="nav-item px-2 fs-6">
           <Link class="nav-link active" aria-current="page" to='/ahm'>AHMEDABAD</Link>

@@ -10,8 +10,6 @@ import { Ahmedabad } from './Components/Categories/Ahmedabad';
 import { Business } from './Components/Categories/Business';
 import { Technology } from './Components/Categories/Technology';
 import { Beauty, Others } from './Components/Categories/Beauty';
-import { Home2 } from './Components/Categories/Home2';
-import { Home3 } from './Components/Categories/Home3';
 import { Corona2 } from './Components/Categories/Corona2';
 import { Corona3 } from './Components/Categories/Corona3';
 import { World2 } from './Components/Categories/World2';
@@ -26,15 +24,14 @@ import { Technology2 } from './Components/Categories/Technology2';
 import { Technology3 } from './Components/Categories/Technology3';
 import { Food } from './Components/Categories/Food';
 import { Entertainment } from './Components/Categories/Entertainment';
+import { Button } from './Components/Categories/Button';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/home2' element={<Home2/>}/>
-        <Route path='/home3' element={<Home3/>}/>  
+        <Route path='/' element={<Home/>}/>  
         <Route path='/corona' element={<Corona/>}/>
         <Route path='/corona2' element={<Corona2/>}/>
         <Route path='/corona3' element={<Corona3/>}/>
@@ -56,6 +53,7 @@ function App() {
         <Route path='/beauty' element={<Beauty/>}/>
         <Route path='/food' element={<Food/>}/>
         <Route path='/enter' element={<Entertainment/>}/>
+        <Route path='/button/:id' element={<Button/>}/>
       </Routes>
     </div>
   );

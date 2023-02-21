@@ -23,13 +23,14 @@ export const Business3 = () => {
         <div className='mx-auto ' style={{width:700}}>        
        {
         news.map((items) => (  
-          <div class="card" >
-  <img src={items.yoast_head_json.og_image[0].url} class="card-img-top" alt="..."></img> 
-  <div class="card-body">
-    <h4 class="card-title"><b>{items.title.rendered}</b></h4>
-    <p class="card-text">{items.excerpt.rendered}</p>
-  </div>
-</div>
+          <div class="card mt-3" style={{borderRadius:20,backgroundColor:'ivory'}}>
+          <img src={items.yoast_head_json.og_image[0].url} class="card-img-top" alt="..." style={{maxHeight:400,borderRadius:20}}></img>  
+          <div class="card-body">
+          <h4 class="card-title" dangerouslySetInnerHTML={{__html: items.title.rendered}}></h4>
+            <p class="card-text" dangerouslySetInnerHTML={{__html: items.excerpt.rendered}}></p>
+            <Link to={`/button/${items.id}`} ><button type="button" class="btn" style={{backgroundColor:'midnightblue',color:'white',borderRadius:200}}>Read more...</button></Link>
+          </div>
+        </div>
          
         ))
        }      

@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import './Button.css'
 
 export const Button = () => {
     const params =useParams();
@@ -18,15 +19,12 @@ export const Button = () => {
         })
     }
   return (
-    <div className='container' style={{maxHeight:500}}>
-        <div className='row ' >
-            <div className='col-2'></div>
-            <div className='col-8' > <div dangerouslySetInnerHTML={{__html: one?.content?.rendered}} style={{backgroundColor:'antiquewhite',imageRendering:'crisp-edges'}}></div></div>
-            <div className='col-2'></div>
-
-        </div>
+    
+        <div className='divi' dangerouslySetInnerHTML={{__html: one?.content?.rendered}} style={{backgroundColor:'antiquewhite',imageRendering:'crisp-edges'}}></div>
        
 
-    </div>
+       
+
+    
   )
 }

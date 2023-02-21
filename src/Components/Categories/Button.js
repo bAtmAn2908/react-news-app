@@ -18,10 +18,10 @@ export const Button = () => {
         })
     }
   return (
-    <div className='container'>
-        <div className='row'>
+    <div className='container' style={{maxHeight:500}}>
+        <div className='row ' >
             <div className='col-2'></div>
-            <div className='col-8'> <div dangerouslySetInnerHTML={{__html: one?.content?.rendered}} style={{backgroundColor:'antiquewhite'}}></div></div>
+            <div className='col-8' > <div dangerouslySetInnerHTML={{__html: one?.content?.rendered}} style={{backgroundColor:'antiquewhite',imageRendering:'crisp-edges'}}></div></div>
             <div className='col-2'></div>
 
         </div>

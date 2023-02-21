@@ -1,18 +1,15 @@
 
 .card{
   height: 650px;
-  justify-content: center;
-  align-items: center;
   background-color: transparent;
 }
 
 .image2{
-  height: 500px;
-  width: 700px;
-  justify-content: center;
-  align-items: center;
+  height: 70vh;
+  width: 100vw;
   left: 100px;
-  margin-left: 400px;
+  padding-right: 350px;
+  padding-left: 350px;
 }
 .textHome1{
   margin-top: 20px;
